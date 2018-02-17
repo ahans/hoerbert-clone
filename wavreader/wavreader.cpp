@@ -9,7 +9,7 @@ namespace de { namespace ahans {
 bool is_big_endian()
 {
     const int deadbeef = 0xd3adb33f;
-    return reinterpret_cast<const char*>(&deadbeef)[0] == 0x3a;
+    return reinterpret_cast<const char*>(&deadbeef)[0] == 0xd3;
 }
 
 template <typename T>
